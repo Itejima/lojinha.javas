@@ -1,0 +1,54 @@
+# Projeto Lojinha Online
+
+Este projeto foi desenvolvido com o objetivo de simular o funcionamento de uma lojinha online utilizando a linguagem Java e o paradigma de orientação a objetos.
+
+A proposta do sistema é representar, de forma simples, o fluxo de compra de um cliente, desde a escolha de produtos até a finalização do pagamento.
+
+## Funcionalidades
+
+O sistema permite:
+
+- Identificação de um cliente (definido diretamente no código)
+- Listagem de produtos disponíveis
+- Adição de múltiplos produtos ao pedido (simulando um carrinho)
+- Cálculo do valor total da compra
+- Simulação do processamento de pagamento
+
+## Como funciona
+
+O usuário pode selecionar os produtos desejados informando o ID e a quantidade.  
+Após isso, é possível adicionar mais itens ao pedido ou finalizar a seleção.
+
+Ao final, o sistema apresenta um resumo do pedido e solicita a confirmação da compra.  
+Caso o usuário confirme, o pagamento é processado. Caso contrário, a compra é cancelada.
+
+## Arquitetura
+
+O sistema segue uma estrutura simples baseada no modelo cliente-servidor monolítico, separando as responsabilidades em classes como:
+
+- Cliente
+- Produto
+- Pedido
+- ItemPedido
+- SistemaLoja
+- PagamentoService
+
+Cada classe possui uma função específica, facilitando a organização e entendimento do código.
+
+## Padrão de Projeto Utilizado
+
+Foi utilizado o padrão de projeto Singleton na classe PagamentoService.
+
+Esse padrão garante que exista apenas uma única instância responsável pela comunicação com o sistema de pagamento durante toda a execução do programa.
+
+A escolha do Singleton foi feita para evitar múltiplas instâncias desnecessárias e garantir um controle centralizado do processamento de pagamento.
+
+## Observações
+
+O pagamento não é real, sendo apenas uma simulação baseada em regras simples para representar a resposta de um sistema externo.
+
+O foco do projeto está na organização do código, na modelagem das entidades e na representação do fluxo de funcionamento do sistema.
+
+## Conclusão
+
+Este projeto demonstra, de forma prática, conceitos importantes de programação orientada a objetos, organização de sistemas e uso de padrões de projeto.
